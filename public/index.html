@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wellness Startseite</title>
+    <!-- Tailwind CSS über CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="relative min-h-screen font-sans bg-black">
+<!-- Hintergrundbereich (Hero) -->
+<div
+        class="relative h-screen bg-cover bg-center flex items-center justify-center"
+        style="background-image: url('https://source.unsplash.com/1600x900/?nature,relax')"
+>
+    <!-- Zitat -->
+    <p class="absolute top-5 left-5 text-white text-xl italic bg-gray-800 bg-opacity-60 px-4 py-2 rounded-md">
+        Entspannung beginnt dort, wo der Kopf aufhört zu arbeiten
+    </p>
+
+    <!-- Benutzer-Icon -->
+    <button class="absolute top-5 right-5 text-white text-3xl" aria-label="Benutzerprofil">
+        👤
+    </button>
+
+    <!-- Menübereich -->
+    <div class="absolute top-20 left-5 text-white">
+        <!-- Überschrift und Menü-Icon -->
+        <div class="flex items-center gap-4 mb-4">
+            <button class="text-3xl" aria-label="Menü öffnen">☰</button>
+            <h2 class="text-2xl font-semibold bg-gray-800 bg-opacity-60 px-3 py-1 rounded">
+                HIER BEGINNT DIE REISE
+            </h2>
+        </div>
+
+        <!-- Kategorienliste -->
+        <ul class="border border-white bg-white bg-opacity-10 backdrop-blur-md p-4 rounded-md space-y-2 w-fit">
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Wellness</li>
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Yoga-Retreats</li>
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Natururlaub</li>
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Meditation</li>
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Tour</li>
+            <li class="text-white text-xl italic border-b border-white pb-1 hover:underline cursor-pointer">Bestseller</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
